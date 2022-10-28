@@ -50,5 +50,12 @@ public class Hooks {
 
     }
 
+    @After("@db")
+   public void tearDownDB(){
+        DB_Util.destroy();
+    }
+
+
+
 
 }
